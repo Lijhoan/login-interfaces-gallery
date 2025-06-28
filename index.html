@@ -1,33 +1,83 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciar Sesión - Nothing Style</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Galería de Diseños de Login</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="login-container nothing-style">
-        <div class="login-header">
-            <img src="nothing-logo.svg" alt="Nothing Logo" class="logo">
-            <h1>Iniciar Sesión</h1>
-        </div>
-        <form class="login-form">
-            <div class="input-group">
-                <label for="username">Usuario</label>
-                <input type="text" id="username" placeholder="Tu nombre de usuario o correo">
-            </div>
-            <div class="input-group">
-                <label for="password">Contraseña</label>
-                <input type="password" id="password" placeholder="Tu contraseña">
-            </div>
-            <button type="submit" class="btn-login">Iniciar Sesión</button>
-            <a href="#" class="forgot-password">¿Olvidaste tu contraseña?</a>
-        </form>
+  <header>
+    <h1>Login Gallery</h1>
+    <p>Explora distintos estilos de login visuales</p>
+  </header>
+
+  <div class="search-container">
+    <input type="text" class="search-box" placeholder="Buscar estilos..." id="searchInput">
+  </div>
+
+  <div class="controls">
+    <button class="filter-btn active" data-filter="all">Todos</button>
+    <button class="filter-btn" data-filter="nothing">Nothing</button>
+    <button class="filter-btn" data-filter="dark">Oscuro</button>
+    <button class="filter-btn" data-filter="minimal">Minimalista</button>
+    <button class="filter-btn" data-filter="illustrated">Ilustrado</button>
+    
+    <div class="view-toggle">
+      <button class="view-btn active" data-view="grid">Grid</button>
+      <button class="view-btn" data-view="list">Lista</button>
     </div>
-    <script src="script.js"></script>
-</body>
-</html>
+  </div>
 
+  <main>
+    <div class="gallery" id="gallery">
+      <div class="card" data-category="nothing modern" data-title="Nothing Style 1">
+        <div class="card-image">
+          <img src="login_nothing_style_1.png" alt="Nothing Style 1" />
+        </div>
+        <div class="card-info">
+          <div class="card-title">Nothing Style 1</div>
+          <div class="card-description">Diseño minimalista inspirado en Nothing Phone</div>
+          <div class="card-tags">
+            <span class="tag">Nothing</span>
+            <span class="tag">Moderno</span>
+          </div>
+        </div>
+      </div>
 
+      <div class="card" data-category="nothing dark" data-title="Nothing Style 2">
+        <div class="card-image">
+          <img src="login_nothing_style_2.png" alt="Nothing Style 2" />
+        </div>
+        <div class="card-info">
+          <div class="card-title">Nothing Style 2</div>
+          <div class="card-description">Interfaz oscura con estética Nothing</div>
+          <div class="card-tags">
+            <span class="tag">Nothing</span>
+            <span class="tag">Oscuro</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-category="nothing mobile" data-title="Nothing Style 3">
+        <div class="card-image">
+          <img src="login_nothing_style_3.png" alt="Nothing Style 3" />
+        </div>
+        <div class="card-info">
+          <div class="card-title">Nothing Style 3</div>
+          <div class="card-description">Diseño móvil con elementos Nothing</div>
+          <div class="card-tags">
+            <span class="tag">Nothing</span>
+            <span class="tag">Móvil</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card" data-category="minimal modern" data-title="Modern Minimal">
+        <div class="card-image">
+          <img src="modern_minimal_login.png" alt="Modern Minimal Login" />
+        </div>
+        <div class="card-info">
+          <div class="card-title">Modern Minimal</div>
+          <div class="card-description">Interfaz limpia y
